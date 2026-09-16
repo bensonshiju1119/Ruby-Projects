@@ -1,0 +1,18 @@
+<h1><%= @task.name %></h1>
+
+<p>Description: <%= @task.description %></p>
+<p>Due Date: <%= @task.due_date %></p>
+<p>Category: <%= @task.category %></p>
+<p>Priority: <%= @task.priority %></p>
+
+<hr>
+
+<a href="/tasks/<%= @task.id %>/edit">Edit Task</a>
+
+<br><br>
+
+<a href="/tasks/<%= @task.id %>/subtasks">View Subtasks</a>
+
+<br><br>
+
+<a href="/tasks">Back to Tasks</a>

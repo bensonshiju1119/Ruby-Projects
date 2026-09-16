@@ -1,0 +1,30 @@
+<%= form_with model: task do |form| %>
+
+  <label>Task Name</label><br>
+  <%= form.text_field :name %>
+
+  <br><br>
+
+  <label>Description</label><br>
+  <%= form.text_area :description %>
+
+  <br><br>
+
+  <label>Due Date</label><br>
+  <%= form.date_field :due_date %>
+
+  <br><br>
+
+  <label>Category</label><br>
+  <%= form.text_field :category %>
+
+  <br><br>
+
+  <label>Priority</label><br>
+  <%= form.select :priority, ["L", "M", "H"] %>
+
+  <br><br>
+
+  <%= form.submit %>
+
+<% end %>
